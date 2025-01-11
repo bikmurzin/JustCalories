@@ -16,6 +16,13 @@
 		70CF384B2D32B22600A568F2 /* JustCaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF384A2D32B22600A568F2 /* JustCaloriesTests.swift */; };
 		70CF38552D32B22600A568F2 /* JustCaloriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38542D32B22600A568F2 /* JustCaloriesUITests.swift */; };
 		70CF38572D32B22600A568F2 /* JustCaloriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38562D32B22600A568F2 /* JustCaloriesUITestsLaunchTests.swift */; };
+		70CF38712D32B49400A568F2 /* AddProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38702D32B49400A568F2 /* AddProductModel.swift */; };
+		70CF38732D32B4A000A568F2 /* AddProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38722D32B4A000A568F2 /* AddProductViewModel.swift */; };
+		70CF38782D32B4CF00A568F2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38772D32B4CF00A568F2 /* NetworkService.swift */; };
+		70CF387A2D32B4D900A568F2 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38792D32B4D900A568F2 /* MealsModel.swift */; };
+		70CF387C2D32B4E200A568F2 /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF387B2D32B4E200A568F2 /* MealsViewModel.swift */; };
+		70CF38802D32B4F200A568F2 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF387F2D32B4F200A568F2 /* MealsView.swift */; };
+		70CF38822D32B50000A568F2 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF38812D32B50000A568F2 /* AddProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		70CF38502D32B22600A568F2 /* JustCaloriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustCaloriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70CF38542D32B22600A568F2 /* JustCaloriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCaloriesUITests.swift; sourceTree = "<group>"; };
 		70CF38562D32B22600A568F2 /* JustCaloriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCaloriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70CF38702D32B49400A568F2 /* AddProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductModel.swift; sourceTree = "<group>"; };
+		70CF38722D32B4A000A568F2 /* AddProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewModel.swift; sourceTree = "<group>"; };
+		70CF38772D32B4CF00A568F2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		70CF38792D32B4D900A568F2 /* MealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
+		70CF387B2D32B4E200A568F2 /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
+		70CF387F2D32B4F200A568F2 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
+		70CF38812D32B50000A568F2 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +112,12 @@
 		70CF38332D32B22500A568F2 /* JustCalories */ = {
 			isa = PBXGroup;
 			children = (
-				70CF38342D32B22500A568F2 /* JustCaloriesApp.swift */,
-				70CF38362D32B22500A568F2 /* ContentView.swift */,
-				70CF38382D32B22600A568F2 /* Assets.xcassets */,
+				70CF386F2D32B30B00A568F2 /* Resources */,
+				70CF386E2D32B2F500A568F2 /* Shared */,
+				70CF38642D32B28A00A568F2 /* Features */,
+				70CF38632D32B27900A568F2 /* App */,
 				70CF383D2D32B22600A568F2 /* Persistence.swift */,
 				70CF383F2D32B22600A568F2 /* JustCalories.xcdatamodeld */,
-				70CF383A2D32B22600A568F2 /* Preview Content */,
 			);
 			path = JustCalories;
 			sourceTree = "<group>";
@@ -131,6 +145,117 @@
 				70CF38562D32B22600A568F2 /* JustCaloriesUITestsLaunchTests.swift */,
 			);
 			path = JustCaloriesUITests;
+			sourceTree = "<group>";
+		};
+		70CF38632D32B27900A568F2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38342D32B22500A568F2 /* JustCaloriesApp.swift */,
+				70CF38362D32B22500A568F2 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		70CF38642D32B28A00A568F2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				70CF386A2D32B2D500A568F2 /* AddProduct */,
+				70CF38652D32B29400A568F2 /* Meals */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		70CF38652D32B29400A568F2 /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38692D32B2AD00A568F2 /* Services */,
+				70CF38682D32B2A800A568F2 /* Model */,
+				70CF38672D32B2A200A568F2 /* ViewModel */,
+				70CF38662D32B29D00A568F2 /* View */,
+			);
+			path = Meals;
+			sourceTree = "<group>";
+		};
+		70CF38662D32B29D00A568F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70CF387F2D32B4F200A568F2 /* MealsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70CF38672D32B2A200A568F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70CF387B2D32B4E200A568F2 /* MealsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70CF38682D32B2A800A568F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38792D32B4D900A568F2 /* MealsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70CF38692D32B2AD00A568F2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38772D32B4CF00A568F2 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		70CF386A2D32B2D500A568F2 /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				70CF386D2D32B2EA00A568F2 /* Model */,
+				70CF386C2D32B2E400A568F2 /* ViewModel */,
+				70CF386B2D32B2DF00A568F2 /* View */,
+			);
+			path = AddProduct;
+			sourceTree = "<group>";
+		};
+		70CF386B2D32B2DF00A568F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38812D32B50000A568F2 /* AddProductView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70CF386C2D32B2E400A568F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38722D32B4A000A568F2 /* AddProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70CF386D2D32B2EA00A568F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70CF38702D32B49400A568F2 /* AddProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70CF386E2D32B2F500A568F2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		70CF386F2D32B30B00A568F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70CF383A2D32B22600A568F2 /* Preview Content */,
+				70CF38382D32B22600A568F2 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +388,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CF38732D32B4A000A568F2 /* AddProductViewModel.swift in Sources */,
+				70CF38712D32B49400A568F2 /* AddProductModel.swift in Sources */,
+				70CF38802D32B4F200A568F2 /* MealsView.swift in Sources */,
+				70CF38782D32B4CF00A568F2 /* NetworkService.swift in Sources */,
+				70CF387C2D32B4E200A568F2 /* MealsViewModel.swift in Sources */,
+				70CF38822D32B50000A568F2 /* AddProductView.swift in Sources */,
 				70CF383E2D32B22600A568F2 /* Persistence.swift in Sources */,
 				70CF38412D32B22600A568F2 /* JustCalories.xcdatamodeld in Sources */,
+				70CF387A2D32B4D900A568F2 /* MealsModel.swift in Sources */,
 				70CF38372D32B22500A568F2 /* ContentView.swift in Sources */,
 				70CF38352D32B22500A568F2 /* JustCaloriesApp.swift in Sources */,
 			);
@@ -355,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -412,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -429,7 +561,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JustCalories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JustCalories/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 92556VU37M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -458,7 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JustCalories/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"JustCalories/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 92556VU37M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
